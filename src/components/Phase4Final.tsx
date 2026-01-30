@@ -55,7 +55,7 @@ export function Phase4Final({ onNext }: Phase4FinalProps) {
 
         {/* Character below */}
         <img
-          src="/character/character3.gif"
+          src={`${import.meta.env.BASE_URL}character/character3.gif`}
           alt="Dudong"
           className="character"
           style={{ width: '180px', height: '180px' }}

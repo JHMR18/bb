@@ -56,7 +56,7 @@ export function Phase2Messenger({ onNext }: Phase2MessengerProps) {
 
         {/* Character below */}
         <img
-          src="/character/character1.gif"
+          src={`${import.meta.env.BASE_URL}character/character1.gif`}
           alt="Dudong"
           className="character"
         />

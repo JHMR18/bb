@@ -160,7 +160,7 @@ export function Phase3Memories({ onNext }: Phase3MemoriesProps) {
           This is how love looks when it’s built to last.🩷
         </div>
         <img
-          src="/character/character2.gif"
+          src={`${import.meta.env.BASE_URL}character/character2.gif`}
           alt="Character"
           className="character"
           style={{ width: "120px", height: "120px" }}
@@ -173,7 +173,7 @@ export function Phase3Memories({ onNext }: Phase3MemoriesProps) {
           {IMAGE_FILES.slice(0, 20).map((img, i) => (
             <img
               key={img}
-              src={`/images/${img}`}
+              src={`${import.meta.env.BASE_URL}images/${img}`}
               alt={`Memory ${i + 1}`}
               className="blast-image"
               style={
@@ -207,7 +207,7 @@ export function Phase3Memories({ onNext }: Phase3MemoriesProps) {
               {[...IMAGE_FILES, ...IMAGE_FILES].map((img, i) => (
                 <img
                   key={`${img}-${i}`}
-                  src={`/images/${img}`}
+                  src={`${import.meta.env.BASE_URL}images/${img}`}
                   alt={`Memory ${(i % IMAGE_FILES.length) + 1}`}
                   className="carousel-image"
                 />
